@@ -45,13 +45,9 @@ import pytest
 @pytest.mark.parametrize(
     "test, expected",
     [
-        ([ [8, 2],
-           [3, 4],
-           [5, 6] ], [3, 2]),
+        ([ [8, 2], [3, 4], [5, 6] ], [3, 2]),
 
-        ([ [1, 7],
-           [9, 8],
-           [4, 3] ], [1, 3]),
+        ([ [1, 7], [9, 8], [5, 6] ], [1, 6]),
     ])
 
 def test_daily_max_min(test, expected):
